@@ -1,0 +1,95 @@
+.dealer-banner {
+  background-image: linear-gradient(rgba(13, 54, 21, 0.85), rgba(13, 54, 21, 0.85)), url('https://images.unsplash.com/photo-1590682680695-43b964a3ae17?q=80&w=1920&auto=format&fit=crop');
+}
+
+.dealer-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.benefit-card {
+  text-align: center;
+  padding: 40px;
+  background-color: var(--white);
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.benefit-card:hover {
+  transform: translateY(-10px);
+}
+
+.benefit-icon {
+  font-size: 3.5rem;
+  color: var(--dark-green);
+  margin-bottom: 20px;
+}
+
+.dealer-form-section {
+  background-color: var(--gray);
+}
+
+.dealer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+}
+
+.dealer-info h2 {
+  font-size: 2.5rem;
+  color: var(--dark-green);
+  margin-bottom: 20px;
+}
+
+.state-availability {
+  margin: 30px 0;
+}
+
+.state-availability ul {
+  list-style: check;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.state-availability li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.dealer-form-container {
+  background-color: var(--white);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+@media (min-width: 968px) {
+  .dealer-grid {
+    grid-template-columns: 1fr 1.2fr;
+  }
+}

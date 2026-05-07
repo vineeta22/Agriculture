@@ -1,0 +1,31 @@
+.search-bar {
+  display: flex;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto 30px;
+  position: relative;
+  box-shadow: var(--shadow);
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 15px 25px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.search-btn {
+  background-color: var(--dark-green);
+  color: var(--white);
+  border: none;
+  padding: 0 25px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.search-btn:hover {
+  background-color: var(--light-green);
+}

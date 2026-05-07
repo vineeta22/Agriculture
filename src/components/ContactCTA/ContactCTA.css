@@ -1,0 +1,68 @@
+.contact-cta {
+  background: linear-gradient(rgba(31, 107, 44, 0.9), rgba(31, 107, 44, 0.9)), url('https://placehold.co/1200x400/1f6b2c/white?text=Contact+Us');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+  color: var(--white);
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.cta-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+  background-color: var(--white);
+  color: var(--dark-green);
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.cta-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.cta-item.whatsapp {
+  background-color: #25d366;
+  color: var(--white);
+}
+
+@media (min-width: 768px) {
+  .cta-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .cta-buttons {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .cta-item {
+    width: auto;
+    justify-content: flex-start;
+  }
+}

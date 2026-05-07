@@ -1,0 +1,25 @@
+.counter-item {
+  background-color: var(--gray);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.counter-item:hover {
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+  transform: translateY(-5px);
+}
+
+.counter-item h3 {
+  font-size: 2rem;
+  color: var(--dark-green);
+  margin-bottom: 5px;
+}
+
+.counter-item p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0;
+}
