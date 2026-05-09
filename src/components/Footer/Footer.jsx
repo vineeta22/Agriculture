@@ -37,7 +37,7 @@ const Footer = () => {
             <h4>{t('footer.headOffice')}</h4>
             <div className="contact-info">
               <p><FaMapMarkerAlt /> Kakinada, Andhra Pradesh, Plot No - 436/7899</p>
-              <p><FaPhoneAlt /> 8917559513</p>
+              <p><FaPhoneAlt /> +91 8917559513</p>
               <p><FaEnvelope /> Kenzendecropspvtltd@gmail.com</p>
             </div>
           </div>
@@ -46,7 +46,7 @@ const Footer = () => {
             <h4>{t('footer.odishaOffice')}</h4>
             <div className="contact-info">
               <p><FaMapMarkerAlt /> PARAMANANDAPUR, MEDINIPUR, Kalahandi, Odisha - 766002</p>
-              <p><FaPhoneAlt /> 9853174184</p>
+              <p><FaPhoneAlt /> +91 9853174184</p>
             </div>
           </div>
         </div>
