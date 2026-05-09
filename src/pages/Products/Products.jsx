@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { FaFilePdf } from 'react-icons/fa';
 import { products } from '../../data/products';
 import ProductCard from '../../components/ProductCard/ProductCard';
 import SearchBar from '../../components/SearchBar/SearchBar';
@@ -31,6 +32,17 @@ const Products = () => {
         <div className="container">
           <h1>{t('productsPage.title', 'Our Products')}</h1>
           <p>{t('productsPage.subtitle', 'Explore our wide range of agricultural solutions.')}</p>
+          <div className="pdf-download-container" style={{ marginTop: '25px' }}>
+            <a 
+              href="/Kenzende Crops Product List.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn btn-primary"
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', backgroundColor: 'var(--white)', color: 'var(--dark-green)' }}
+            >
+              <FaFilePdf /> {t('productsPage.downloadPdf', 'View Full Product Catalog (PDF)')}
+            </a>
+          </div>
         </div>
       </section>
 

@@ -108,7 +108,7 @@ const Contact = () => {
               </div>
 
               <div className="whatsapp-contact">
-                <a href="https://wa.me/8917559513" target="_blank" rel="noopener noreferrer" className="btn btn-primary whatsapp-btn">
+                <a href="https://wa.me/+918917559513" target="_blank" rel="noopener noreferrer" className="btn btn-primary whatsapp-btn">
                   <FaWhatsapp /> {t('contactPage.whatsapp', 'Chat on WhatsApp')}
                 </a>
               </div>

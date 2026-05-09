@@ -3,7 +3,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 import './WhatsAppButton.css';
 
 const WhatsAppButton = () => {
-  const phoneNumber = "8917559513";
+  const phoneNumber = "+918917559513"; // +91 India country code
   const message = "Hello, I would like to inquire about Kenzende Crops products.";
 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;

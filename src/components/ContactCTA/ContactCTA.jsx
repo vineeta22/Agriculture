@@ -14,7 +14,7 @@ const ContactCTA = () => {
           <p>{t('cta.subtitle')}</p>
 
           <div className="cta-buttons">
-            <a href="tel:8917559513" className="cta-item">
+            <a href="tel:+918917559513" className="cta-item">
               <FaPhoneAlt />
               <span>{t('cta.callUs')}</span>
             </a>
@@ -22,7 +22,7 @@ const ContactCTA = () => {
               <FaEnvelope />
               <span>{t('cta.emailUs')}</span>
             </a>
-            <a href="https://wa.me/8917559513" className="cta-item whatsapp">
+            <a href="https://wa.me/+918917559513" className="cta-item whatsapp">
               <FaWhatsapp />
               <span>{t('cta.whatsapp')}</span>
             </a>

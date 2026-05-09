@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaFacebookF, FaYoutube, FaInstagram, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import './Footer.css';
 
@@ -16,10 +16,9 @@ const Footer = () => {
             <p>{t('footer.quote')}</p>
             <p>{t('footer.desc')}</p>
             <div className="social-links">
-              <a href="#"><FaFacebookF /></a>
-              <a href="#"><FaTwitter /></a>
-              <a href="#"><FaInstagram /></a>
-              <a href="#"><FaLinkedinIn /></a>
+              <a href="#" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
+              <a href="https://youtube.com/@kenzendecropspvtltd?si=W2_BkmSw6O3iACHV" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
+              <a href="https://www.instagram.com/kenzendecropspvt.ltd?igsh=bzM5Z253MXQ4bGsy" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
             </div>
           </div>
 

@@ -1,3 +1,140 @@
+/* ── SUCCESS FARMERS SECTION ── */
+.success-farmers-section {
+  background: linear-gradient(135deg, #f0faf0 0%, #e8f5e9 100%);
+  padding-bottom: 10px;
+}
+
+.trust-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.trust-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--dark-green);
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.trust-subtitle {
+  color: #555;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+.trust-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: var(--dark-green);
+}
+
+.stat-item svg {
+  font-size: 1.5rem;
+  color: var(--light-green);
+}
+
+.stat-item strong {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--dark-green);
+  line-height: 1;
+}
+
+.stat-item span {
+  font-size: 0.8rem;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Photo Cards */
+.success-photos-slider {
+  padding-bottom: 50px !important;
+}
+
+.success-photo-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  cursor: pointer;
+}
+
+.success-photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.success-photo-card:hover img {
+  transform: scale(1.06);
+}
+
+.photo-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(27, 94, 32, 0.85), transparent);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 20px 12px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.success-photo-card:hover .photo-overlay {
+  opacity: 1;
+}
+
+.overlay-icon {
+  font-size: 1rem;
+}
+
+/* Swiper nav arrows */
+.success-photos-slider .swiper-button-prev,
+.success-photos-slider .swiper-button-next {
+  color: var(--dark-green);
+  background: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.success-photos-slider .swiper-button-prev::after,
+.success-photos-slider .swiper-button-next::after {
+  font-size: 14px;
+  font-weight: 900;
+}
+
+/* ── WRITTEN TESTIMONIALS ── */
 .testimonials {
   background-color: var(--gray);
   padding-top: 20px;
@@ -52,3 +189,9 @@
 .testimonial-swiper .swiper-pagination-bullet-active {
   background: var(--dark-green);
 }
+
+@media (max-width: 480px) {
+  .trust-stats { gap: 20px; }
+  .success-photo-card { aspect-ratio: 1 / 1; }
+}
+
